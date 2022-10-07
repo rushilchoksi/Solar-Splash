@@ -1,0 +1,33 @@
+Screen1:
+<Screen1>:
+    Image:
+        halign: 'center'
+        source: 'Logo.png'
+        size_hint_x: 0.2
+        pos_hint: {'center_x': 0.5, 'center_y': 0.90}
+
+    MDLabel:
+        halign: 'center'
+        text: "Application Name"
+        font_size: self.width/20
+        pos_hint: {'center_y': 0.78}
+
+    MDLabel:
+        halign: 'center'
+        text: "Frequency Codes\n1: Monday\n2: Tuesday\n3: Wednesday\n4: Thursday\n5: Friday\n6: Saturday\n7: Sunday\n*: Daily"
+        pos_hint: {'center_y': 0.60}
+
+    MDTextField:
+        id: text_field
+        halign: 'center'
+        size_hint_x: None
+        width: 650
+        hint_text: "Set frequency"
+        pos_hint: {'center_x': 0.50, 'center_y': 0.30}
+        on_text_validate: root.textInput(self)
+        padding: 20
+
+    MDRectangleFlatButton:
+        text: "Submit Configuration"
+        pos_hint: {'center_x': 0.50, 'center_y': 0.20}
+        on_press: root.onClick()
