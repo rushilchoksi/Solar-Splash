@@ -1,5 +1,12 @@
 Screen1:
 <Screen1>:
+    canvas.before:
+        Color:
+            rgba: 244/255, 242/255, 254/255, 1
+        Rectangle:
+            # self here refers to the widget i.e FloatLayout
+            pos: self.pos
+            size: self.size
     Image:
         halign: 'center'
         source: 'Logo.png'
@@ -8,7 +15,8 @@ Screen1:
 
     MDLabel:
         halign: 'center'
-        text: "Application Name"
+        bold: True
+        text: "Solar Splash"
         font_size: self.width/20
         pos_hint: {'center_y': 0.78}
 
