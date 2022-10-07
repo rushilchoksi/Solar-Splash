@@ -2,11 +2,11 @@ import json
 import requests
 from tabulate import tabulate
 
-endpointURL = 'https://api.weatherapi.com/v1/forecast.json?key=a4b36c3290e34a97aae133608220610&q=23.016062199507843,72.47214227178155'
+endpointURL = 'https://api.weatherapi.com/v1/forecast.json?key=a4b36c3290e34a97aae133608220610&q=23.529769486962326,72.45743588980896'
 apiResponse = requests.get(endpointURL).json()
 # print(json.dumps(apiResponse, indent=4))
 
-print(f'\n\nCurrent Weather Data:\n{json.dumps(apiResponse["current"], indent=4)}')
+# print(f'\n\nCurrent Weather Data:\n{json.dumps(apiResponse["current"], indent=4)}')
 
 hourlyWeatherDataList = []
 print(f'\n\nHourly Weather Forecast Data:')

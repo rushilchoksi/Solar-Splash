@@ -15,7 +15,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-
+from weather.views import ask_sprinkle
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('ask_sprinkle/', ask_sprinkle),
+
+
 ]
