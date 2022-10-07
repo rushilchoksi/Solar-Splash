@@ -1,0 +1,41 @@
+{
+    "location": {
+        "name": "Sarkhej",
+        "region": "Gujarat",
+        "country": "India",
+        "lat": 23.02,
+        "lon": 72.47,
+        "tz_id": "Asia/Kolkata",
+        "localtime_epoch": 1665160690,
+        "localtime": "2022-10-07 22:08"
+    },
+    "current": {
+        "last_updated_epoch": 1665160200,
+        "last_updated": "2022-10-07 22:00",
+        "temp_c": 25.0,
+        "temp_f": 77.0,
+        "is_day": 0,
+        "condition": {
+            "text": "Light rain",
+            "icon": "//cdn.weatherapi.com/weather/64x64/night/296.png",
+            "code": 1183
+        },
+        "wind_mph": 2.2,
+        "wind_kph": 3.6,
+        "wind_degree": 69,
+        "wind_dir": "ENE",
+        "pressure_mb": 1006.0,
+        "pressure_in": 29.71,
+        "precip_mm": 0.0,
+        "precip_in": 0.0,
+        "humidity": 94,
+        "cloud": 75,
+        "feelslike_c": 26.7,
+        "feelslike_f": 80.1,
+        "vis_km": 2.5,
+        "vis_miles": 1.0,
+        "uv": 1.0,
+        "gust_mph": 14.5,
+        "gust_kph": 23.4
+    }
+}
