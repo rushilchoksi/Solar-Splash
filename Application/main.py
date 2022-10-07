@@ -8,7 +8,7 @@ from kivy.properties import StringProperty
 Window.size = (400, 650)
 mainDict = {'clientID': 1, 'timePeriod': 30000, 'dayInterval': 10}
 
-class DemoApp(MDApp):
+class MainApp(MDApp):
     pass
 
 class Screen1(Screen):
@@ -28,6 +28,7 @@ class Screen1(Screen):
             mainDict['cron'] = f'0 6 * * {",".join(self.frequency.split(","))}'
 
         print(mainDict)
+        # Send JSON data to HTTP server
 
 if __name__ == "__main__":
-    DemoApp().run()
+    MainApp().run()
