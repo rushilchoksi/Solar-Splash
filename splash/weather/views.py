@@ -1,3 +1,4 @@
+import json
 import os
 import json
 import requests
@@ -12,6 +13,7 @@ def createCron(nextCall, clientID):
 def ask_sprinkle(request):
     print("starts")
     currentlyRaining()
+    didRain()
     print("end")
     willRain()
     return HttpResponse("asd")
